@@ -1,0 +1,20 @@
+﻿using ApiBlog.Modelos;
+
+namespace ApiBlog.Repositorio.IRepositorio
+{
+    public interface IPostRepositorio
+    {
+
+        ICollection<Post> GetPosts();// Interface que trae colecciones post de la tabla
+
+        Post GetPost(int postId);
+
+        bool ExistePost(string nombre);
+
+        bool ExistePost(int id);
+        bool CrearPost(Post post);
+        bool ActualizarPost(Post post);
+        bool BorrarPost(Post post);
+        bool Guardar();
+    }
+}

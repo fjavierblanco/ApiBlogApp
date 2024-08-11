@@ -1,0 +1,5 @@
+añadir migracion
+add-migration MigracionInicialModeloPost
+
+ejecutar migracion
+update-database
